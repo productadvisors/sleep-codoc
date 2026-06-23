@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sleep.CoDoc — know why you sleep poorly</title>
+<meta name="description" content="Sleep.CoDoc is your AI sleep & longevity companion — it helps you understand the cause of poor sleep and what to do about it.">
+<meta property="og:title" content="Sleep.CoDoc — know why you sleep poorly">
+<meta property="og:description" content="Understand the cause of your poor sleep — and protect your long-term health.">
+<meta property="og:type" content="website">
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  :root{--navy:#0E0E2C;--ink:#131334;--soft:#3a3a63;--muted:#6b6b8a;--brand:#4B4BB7;--violet:#7C3AED;--ice:#CADCFC;--mist:#F6F6FC}
+  html{scroll-behavior:smooth}
+  body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Arial,sans-serif;color:#fff;background:linear-gradient(160deg,#0E0E2C,#1B1B45 55%,#25255f);min-height:100vh;display:flex;flex-direction:column}
+  .wrap{max-width:920px;margin:0 auto;padding:30px 24px;flex:1;display:flex;flex-direction:column}
+  header{display:flex;align-items:center;gap:10px}
+  .logo svg{height:38px;width:auto;display:block}
+  .wm{font-size:22px;font-weight:700;letter-spacing:-.01em}.wm b{color:var(--ice)}
+  main{flex:1;display:flex;flex-direction:column;justify-content:center;gap:20px;padding:6vh 0}
+  .pill{align-self:flex-start;border:1px solid rgba(255,255,255,.25);color:var(--ice);font-size:13px;padding:6px 14px;border-radius:999px}
+  h1{font-size:clamp(30px,6vw,56px);line-height:1.08;font-weight:700;letter-spacing:-.02em}
+  h1 i{color:#A78BFA;font-style:italic}
+  p.lead{font-size:clamp(16px,2vw,20px);line-height:1.5;color:rgba(255,255,255,.8);max-width:48ch}
+  .btns{display:flex;gap:12px;flex-wrap:wrap;margin-top:8px}
+  a.btn{text-decoration:none;font-weight:700;padding:14px 28px;border-radius:999px;font-size:15px;transition:transform .15s}
+  a.btn:hover{transform:translateY(-2px)}
+  a.btn.primary{background:#fff;color:var(--navy)}
+  a.btn.ghost{border:1px solid rgba(255,255,255,.3);color:#fff}
+  .trust{display:flex;flex-wrap:wrap;gap:8px 18px;margin-top:12px;font-size:13px;color:rgba(255,255,255,.55)}
+  .trust span::before{content:"●";color:#A78BFA;margin-right:7px;font-size:9px;vertical-align:middle}
+  footer{border-top:1px solid rgba(255,255,255,.1);padding:18px 0;font-size:12px;color:rgba(255,255,255,.5);display:flex;flex-wrap:wrap;gap:6px 16px;justify-content:space-between}
+  footer a{color:var(--ice);text-decoration:none}
+  .disc{flex-basis:100%;color:rgba(255,255,255,.4);line-height:1.5}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <span class="logo"><svg viewBox="0 0 156 120" aria-hidden="true"><path fill-rule="evenodd" clip-rule="evenodd" d="M75.0661 0.508704C76 0.385915 76.9339 0.280697 77.8679 0.210532C78.6972 0.0493279 79.5572 0.190165 80.291 0.607363C81.0248 1.02456 81.5836 1.6903 81.8655 2.48333C82.1474 3.27636 82.1337 4.14384 81.8269 4.92765C81.52 5.71145 80.9405 6.3594 80.1939 6.7534C72.6463 11.5483 66.6274 18.3847 62.8419 26.4619C59.0564 34.5391 57.6611 43.5227 58.8194 52.3608C59.8005 59.7562 62.5393 66.8121 66.8086 72.9427C71.0778 79.0733 76.7543 84.1019 83.367 87.611C89.9796 91.1202 97.3377 93.0087 104.83 93.1199C112.323 93.2311 119.735 91.5617 126.449 88.2503C131.736 85.777 135.489 89.6887 131.137 95.5124C126.345 101.939 120.303 107.34 113.37 111.393C106.438 115.446 98.7564 118.069 90.7841 119.105C12.1233 129.42 -3.59469 10.7529 75.0661 0.438578V0.508704Z" fill="#ffffff"/><path d="M107.63 27.3819V69.1653C107.706 71.5021 106.854 73.7745 105.257 75.4889C103.66 77.2034 101.448 78.2214 99.1013 78.3218C96.7532 78.2259 94.5386 77.2093 92.9407 75.4938C91.3429 73.7783 90.4916 71.5033 90.5727 69.1653V40.8536C90.6491 38.5168 89.7962 36.2444 88.1993 34.5299C86.6025 32.8155 84.3905 31.7975 82.044 31.697C79.6944 31.793 77.478 32.809 75.8774 34.524C74.2767 36.2389 73.4214 38.5139 73.4978 40.8536V55.9917C73.5836 58.3328 72.7345 60.6123 71.1362 62.3316C69.5378 64.0509 67.3204 65.07 64.9691 65.1659H5.05725M107.7 69.1653V27.3819C107.624 25.0451 108.477 22.7727 110.074 21.0582C111.671 19.3438 113.883 18.3258 116.229 18.2253C118.576 18.3258 120.788 19.3438 122.384 21.0582C123.981 22.7727 124.834 25.0451 124.758 27.3819V55.9917C124.695 58.308 125.544 60.5569 127.125 62.258C128.705 63.9591 130.891 64.9775 133.216 65.0957H151.013" fill="none" stroke="#14143A" stroke-width="5.67" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+    <span class="wm">Sleep<b>.CoDoc</b></span>
+  </header>
+
+  <main>
+    <span class="pill">Your AI sleep &amp; longevity companion</span>
+    <h1>Know <i>why</i> you sleep poorly —<br>and protect your long-term health.</h1>
+    <p class="lead">Most apps count your hours. Sleep.CoDoc helps you understand the cause — and what to do about it.</p>
+    <div class="btns">
+      <a class="btn primary" href="pitch.html">See how it works →</a>
+      <a class="btn ghost" href="mailto:hello@codoc.care?subject=Sleep.CoDoc%20early%20access">Join the waitlist</a>
+    </div>
+    <div class="trust"><span>Validation in progress (vs PSG)</span><span>Private by design</span><span>Built with clinicians</span></div>
+  </main>
+
+  <footer>
+    <span>© 2026 CoDoc · <a href="mailto:hello@codoc.care">hello@codoc.care</a></span>
+    <span><a href="pitch.html">The pitch</a></span>
+    <span class="disc">Sleep.CoDoc is a wellness tool that helps you understand your sleep and have earlier conversations with your doctor. It does not diagnose, treat, or prevent disease.</span>
+  </footer>
+</div>
+</body>
+</html>
